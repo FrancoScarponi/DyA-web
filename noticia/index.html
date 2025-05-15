@@ -1,3 +1,6 @@
+<!-- 
+ https://www.infobae.com/tecno/2025/04/09/microsoft-ha-advertido-que-240-millones-de-usuarios-de-windows-quedaran-sin-soporte-este-ano/
+ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,6 +11,9 @@
   <body>
     <main>
       <section>
+        <nav>
+          
+        </nav>
         <header>
           <h1>
             Microsoft ha advertido que 240 millones de usuarios de Windows
@@ -129,5 +135,75 @@
         </aside>
       </section>
     </main>
+    <form action="">
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <label for="nombre">Nombre
+          <input type="text" name="nombre" required>
+        </label>
+        <label for="apellido">Apellido
+          <input type="text" name="apellido" required>
+        </label>
+        <label for="email">Email
+          <input type="email" name="email" required>
+        </label>
+        <label for="fecha_nacimiento">Fecha de nacimiento
+          <input type="date" required>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Sexo</legend>
+        <label for="sexo">
+          Hombre
+          <input type="radio" value="hombre" name="sexo">
+        </label>
+        <label for="sexo">
+          Mujer
+          <input type="radio" value="mujer" name="sexo">
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Terminos y condiciones</legend>
+        <label for="opciones">Opciones de subsripcion
+          <select name="opciones" id="">
+            <option value="importante">Solo noticias importantes</option>
+            <option value="todas" selected>Recibir todas las noticias</option>
+            <option value="ninguna">No recibir ninguna noticia al mail</option>
+          </select>
+        </label>
+        <label for="terminos">Acepto los terminos y condiciones
+          <input type="checkbox" name="terminos" required>
+        </label>
+      </fieldset>
+      <button type="submit">Enviar</button>
+    </form>
+    <footer>
+      <div>
+        <h3>Infobae</h3>
+        <span>Seguinos en</span>
+        <div>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">X</a>
+        </div>
+      </div>
+      <div>
+        <span>Contactanos</span>
+        <div>
+          <a href="#">Contacto comercial</a>
+          <a href="#">Redaccion</a>
+          <a href="#">Media Kit</a>
+          <a href="#">Empleo</a>
+        </div>
+      </div>
+      <div>
+        <span>Legales</span>
+        <div>
+          <a href="">Terminos y condiciones</a>
+          <a href="">Politicas y privacidad</a>
+        </div>
+      </div>
+    </footer>
+    
   </body>
 </html>
