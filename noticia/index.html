@@ -7,135 +7,129 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noticias</title>
+    <link rel="stylesheet" href="./app.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <main>
-      <section>
-        <nav>
-          
+    <main class="container">
+      <section class="contenido-principal">
+        <nav class="navbar">
+          <a class="logo">
+            <img src="https://www.infobae.com/pf/resources/images/logo_infobae_naranja.svg?d=3172" alt="">
+          </a>
+          <span>15 May, 2025</span>
+          <span>Argentina</span>
+          <span>Colombia</span>
+          <span>España</span>
+          <span>Mexico</span>
         </nav>
-        <header>
-          <h1>
+        <div class="menu">
+          <a class="menu__logo">
+            <img src="https://www.infobae.com/pf/resources/images/logo_infobae_naranja.svg?d=3172" alt="">
+          </a>
+          <div class="menu__items">
+            <span>Ultimas noticias</span>
+            <span>Politica</span>
+            <span>Economia</span>
+            <span>Dolar Hoy</span>
+            <span>Deportes</span>
+            <span>Sociedad</span>
+            <span>Policiales</span>
+          </div>
+        </div>
+        <header class="encabezado">
+          <h1 class="titulo">
             Microsoft ha advertido que 240 millones de usuarios de Windows
             quedarán sin soporte este año
           </h1>
-          <h2>
+          <h2 class="subtitulo">
             La compañía ha asegurado que los dispositivos que no reciban
             actualizaciones de seguridad estarán expuestos a vulnerabilidades
             críticas
           </h2>
         </header>
-
-        <article>
-          <div>
-            <figure>
-              <img
-                src="https://www.infobae.com/resizer/v2/4R3FXLTP6RDSJLRCUZTUBBQEXM.jpg?auth=43c29bbbf137287fd71130c3b4c1425a5ccb59d97ea5e4645616c5971adca528&smart=true&width=992&height=606&quality=85"
-                alt="Vercel logo"
-              />
-              <figcaption>
-                Microsoft dejará de ofrecer actualizaciones y parches de
-                seguridad a Windows 10 en octubre de 2025. EFE/EPA/RITCHIE B.
-                TONGO
-              </figcaption>
-            </figure>
-
-            <p>
-              Microsoft ha intensificado sus esfuerzos para acelerar la
-              transición a Windows 11, un sistema operativo que podría
-              <strong
-                >reducir la dependencia de versiones anteriores y forzar a los
-                usuarios a adaptarse a la nueva tecnología.
-              </strong>
-              Sin embargo, para aquellos que no pueden o no desean actualizar
-              sus equipos, las alternativas se han vuelto limitadas.
-            </p>
-            <p>
-              El 14 de octubre de 2025, Microsoft dejará de dar soporte a
-              Windows 10,
-              <strong>
-                lo que afectará a unos 240 millones de dispositivos que no
-                podrán actualizarse a Windows 11.
-              </strong>
-              Esto obligará a los usuarios a decidir si siguen utilizando sus
-              dispositivos sin actualizaciones de seguridad o si optan por
-              cambiar de equipo.
-            </p>
-            <p>
-              Microsoft ha sido clara en sus advertencias:
-              <strong>
-                los dispositivos que no reciban actualizaciones de seguridad
-                estarán expuestos a vulnerabilidades críticas.
-              </strong>
-              Sin el soporte necesario, los ordenadores se convertirán en un
-              blanco fácil para ciberataques, malware y otros riesgos de
-              seguridad.
-            </p>
-            <figure>
-              <img
-                src="https://www.infobae.com/resizer/v2/PZ5GS2NITRXH546CLABNHDR45A.jpg?auth=e2c59cde8c1758cd570a1d03c31f87507baafd34b6efcf42b0f2e1760ab010af&smart=true&width=992&height=661&quality=85"
-                alt="Mother"
-              />
-              <figcaption>
-                Muchos dispositivos no podrán actualizarse a Windows 11, lo que
-                obliga a los usuarios a tomar decisiones sobre la seguridad y el
-                futuro de sus equipos. REUTERS/Dado Ruvic/Illustration/File
-                Photo
-              </figcaption>
-            </figure>
-            <p>
-              El dilema que enfrentan los usuarios cuyos equipos no cumplen con
-              los requisitos para la actualización es significativo. Algunos
-              pueden optar por actualizar a Windows 11, pero esto solo es
-              posible si el dispositivo tiene hardware compatible, como un
-              procesador moderno y características como el TPM 2.0.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-              tempore alias voluptate ab dolores praesentium architecto minus id
-              hic? Fugiat itaque iusto voluptatibus esse nulla? Odit officia
-              voluptates doloribus. Unde magnam assumenda nisi illo vel! Culpa
-              provident itaque laborum officiis!
-            </p>
-          </div>
-        </article>
-
-        <aside>
-          <div>
-            <h2>Ultimas nociticas</h2>
-          </div>
-          <div>
-            <div>
-              <a href="#">
-                <h3>
-                  El dueño del Inter Miami dio detalles de los planes de Messi
-                  tras su retiro: “Esa fue una de las cosas que lo atrajo a
-                  nuestro proyecto”
-                </h3>
-              </a>
+        <div class="columnas">
+          <article class="noticia">
+            <div class="noticia__contenido">
+              <figure class="noticia__imagen">
+                <img
+                  src="https://www.infobae.com/resizer/v2/4R3FXLTP6RDSJLRCUZTUBBQEXM.jpg?auth=43c29bbbf137287fd71130c3b4c1425a5ccb59d97ea5e4645616c5971adca528&smart=true&width=992&height=606&quality=85"
+                  alt="Vercel logo"
+                />
+                <figcaption>
+                  Microsoft dejará de ofrecer actualizaciones y parches de
+                  seguridad a Windows 10 en octubre de 2025. EFE/EPA/RITCHIE B.
+                  TONGO
+                </figcaption>
+              </figure>
+    
+              <p>
+                Microsoft ha intensificado sus esfuerzos para acelerar la
+                transición a Windows 11...
+              </p>
+              <p>
+                El 14 de octubre de 2025, Microsoft dejará de dar soporte a
+                Windows 10...
+              </p>
+              <p>
+                Microsoft ha sido clara en sus advertencias...
+              </p>
+    
+              <figure class="noticia__imagen">
+                <img
+                  src="https://www.infobae.com/resizer/v2/PZ5GS2NITRXH546CLABNHDR45A.jpg?auth=e2c59cde8c1758cd570a1d03c31f87507baafd34b6efcf42b0f2e1760ab010af&smart=true&width=992&height=661&quality=85"
+                  alt="Mother"
+                />
+                <figcaption>
+                  Muchos dispositivos no podrán actualizarse a Windows 11...
+                </figcaption>
+              </figure>
+    
+              <p>
+                El dilema que enfrentan los usuarios cuyos equipos no cumplen con
+                los requisitos...
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+              </p>
             </div>
-            <div>
-              <a href="#">
-                <h3>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur sunt non eum ut, natus explicabo provident quos
-                  tempora corporis aliquam.
-                </h3>
-              </a>
+          </article>
+    
+          <aside class="noticias-relacionadas">
+            <div class="noticias-relacionadas__titulo">
+              <h2>Últimas noticias</h2>
             </div>
-            <div>
-              <a href="#">
-                <h3>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Corrupti mollitia quisquam omnis sed aperiam assumenda!
-                </h3>
-              </a>
+            <div class="noticias-relacionadas__lista">
+              <div class="noticia-relacionada">
+                <a href="#">
+                  <h3>
+                    El dueño del Inter Miami dio detalles de los planes de Messi...
+                  </h3>
+                </a>
+              </div>
+              <div class="noticia-relacionada">
+                <a href="#">
+                  <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                  </h3>
+                </a>
+              </div>
+              <div class="noticia-relacionada">
+                <a href="#">
+                  <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                  </h3>
+                </a>
+              </div>
             </div>
-          </div>
-        </aside>
+          </aside>
+        </div>
       </section>
     </main>
-    <form action="">
+  
+    <form action="" class="formulario">
       <fieldset>
         <legend>Datos Personales</legend>
         <label for="nombre">Nombre
@@ -151,6 +145,7 @@
           <input type="date" required>
         </label>
       </fieldset>
+  
       <fieldset>
         <legend>Sexo</legend>
         <label for="sexo">
@@ -162,23 +157,26 @@
           <input type="radio" value="mujer" name="sexo">
         </label>
       </fieldset>
+  
       <fieldset>
-        <legend>Terminos y condiciones</legend>
-        <label for="opciones">Opciones de subsripcion
+        <legend>Términos y condiciones</legend>
+        <label for="opciones">Opciones de suscripción
           <select name="opciones" id="">
             <option value="importante">Solo noticias importantes</option>
             <option value="todas" selected>Recibir todas las noticias</option>
             <option value="ninguna">No recibir ninguna noticia al mail</option>
           </select>
         </label>
-        <label for="terminos">Acepto los terminos y condiciones
+        <label for="terminos">Acepto los términos y condiciones
           <input type="checkbox" name="terminos" required>
         </label>
       </fieldset>
+  
       <button type="submit">Enviar</button>
     </form>
-    <footer>
-      <div>
+  
+    <footer class="footer">
+      <div class="footer__seccion">
         <h3>Infobae</h3>
         <span>Seguinos en</span>
         <div>
@@ -187,23 +185,22 @@
           <a href="#">X</a>
         </div>
       </div>
-      <div>
+      <div class="footer__seccion">
         <span>Contactanos</span>
         <div>
           <a href="#">Contacto comercial</a>
-          <a href="#">Redaccion</a>
+          <a href="#">Redacción</a>
           <a href="#">Media Kit</a>
           <a href="#">Empleo</a>
         </div>
       </div>
-      <div>
+      <div class="footer__seccion">
         <span>Legales</span>
         <div>
-          <a href="">Terminos y condiciones</a>
-          <a href="">Politicas y privacidad</a>
+          <a href="#">Términos y condiciones</a>
+          <a href="#">Políticas y privacidad</a>
         </div>
       </div>
     </footer>
-    
-  </body>
+  </body>  
 </html>
