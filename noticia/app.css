@@ -1,0 +1,212 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 8px 0;
+    justify-content: start;
+    position: sticky;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    border-top: 1px solid rgb(221, 221, 221);
+}
+
+.logo{
+    width: 5rem;
+}
+
+.encabezado {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.titulo {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.noticia {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.columnas {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.noticia__imagen img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+}
+
+.noticia__imagen figcaption {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+.noticia__contenido p {
+  margin-bottom: 1rem;
+}
+
+.noticia__contenido strong {
+  font-weight: 700;
+}
+
+.noticias-relacionadas {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  max-height: fit-content;
+  height: fit-content;
+  position: sticky;
+  top: 1rem;
+}
+
+.noticias-relacionadas__titulo h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.noticia-relacionada h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #0056b3;
+}
+
+.noticia-relacionada a {
+  text-decoration: none;
+}
+
+.noticia-relacionada a:hover h3 {
+  text-decoration: underline;
+}
+
+.formulario {
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.formulario fieldset {
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.formulario legend {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.formulario input,
+.formulario select {
+  display: block;
+  margin-top: 0.3rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.formulario input[type="radio"],
+.formulario input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  margin-left: 0.5rem;
+}
+
+.formulario button {
+  background-color: #ff6b00;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.formulario button:hover {
+  background-color: #e45a00;
+}
+
+.footer {
+  background-color: #222;
+  color: #eee;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.footer__seccion {
+  margin-bottom: 1.5rem;
+  min-width: 200px;
+}
+
+.footer__seccion h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer__seccion span {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.footer__seccion a {
+  color: #ff6b00;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.footer__seccion a:hover {
+  text-decoration: underline;
+}
