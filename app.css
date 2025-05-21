@@ -244,3 +244,80 @@ body {
 .footer__seccion a:hover {
   text-decoration: underline;
 }
+
+
+@media (max-width: 1024px) {
+  .menu__items {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .columnas {
+    flex-direction: column;
+  }
+
+  .formulario {
+    max-width: 70vw;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 1.8rem;
+  }
+
+  .subtitulo {
+    font-size: 1rem;
+  }
+
+  .formulario {
+    max-width: 90vw;
+    padding: 1.5rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__seccion {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu__items span {
+    font-size: 0.9rem;
+  }
+
+  .titulo {
+    font-size: 1.4rem;
+  }
+
+  .subtitulo {
+    font-size: 0.95rem;
+  }
+
+  .formulario input,
+  .formulario select {
+    max-width: 100%;
+  }
+
+  .formulario {
+    padding: 1rem;
+  }
+
+  .footer__seccion h3 {
+    font-size: 1.2rem;
+  }
+}
