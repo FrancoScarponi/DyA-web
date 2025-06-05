@@ -65,7 +65,7 @@ body {
 }
 
 .logo{
-    width: 5rem;
+  width: 5rem;
 }
 
 .encabezado {
@@ -92,9 +92,9 @@ body {
 }
 
 .columnas {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .noticia__imagen img {
@@ -125,6 +125,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   max-height: fit-content;
   height: fit-content;
+  min-width: 20rem;
   position: sticky;
   top: 1rem;
 }
