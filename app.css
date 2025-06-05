@@ -21,45 +21,47 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: auto 2rem ;
 
 }
 
 .navbar{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    padding: 8px 0;
-    justify-content: start;
-    position: sticky;
-    border-bottom: 1px solid rgb(221, 221, 221);
-    border-top: 1px solid rgb(221, 221, 221);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 8px 0;
+  justify-content: start;
+  position: sticky;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  border-top: 1px solid rgb(221, 221, 221);
 }
 
 .menu{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    margin:  2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin:  2rem 0;
 }
 
 .menu__logo{
-    width: 10rem;
-    display: block;
+  width: 10rem;
+  display: block;
 }
 
 .menu__items{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    border-bottom: 1px solid rgb(221, 221, 221);
-    border-top: 1px solid rgb(221, 221, 221);
-    width: 100%;
-    justify-content: center;
-    padding:  .5rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  border-top: 1px solid rgb(221, 221, 221);
+  width: 100%;
+  justify-content: center;
+  padding:  .5rem 0;
 }
 
 .logo{
@@ -247,11 +249,6 @@ body {
 
 
 @media (max-width: 1024px) {
-  .menu__items {
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
   .columnas {
     flex-direction: column;
   }
