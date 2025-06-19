@@ -1,4 +1,3 @@
-console.log('prueba')
 const form = document.getElementById("formulario");
 
 const fields = {
@@ -96,3 +95,13 @@ form.addEventListener("submit", (e) => {
     alert("Errores en el formulario. Corrige los campos indicados.");
   }
 });
+
+//CAMBIAR TITULO
+const nombreInput = document.getElementById("nombre");
+const tituloFormulario = document.getElementById("title");
+
+nombreInput.addEventListener("input", () => {
+  const valor = nombreInput.value.trim();
+  tituloFormulario.textContent = valor !== "" ? `Hola ${valor}` : "Hola";
+});
+

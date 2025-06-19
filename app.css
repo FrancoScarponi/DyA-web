@@ -313,7 +313,21 @@ body {
   margin-top: 20px;
 }
 
+.formulario__titulo {
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+  justify-content: center;
+  margin-bottom: 15px;
+}
 
+.formulario__titulo h1 {
+  font-size: 2rem;
+}
+
+#title{
+  
+}
 
 @media (max-width: 768px) {
   .formulario__columna {
