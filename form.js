@@ -1,4 +1,7 @@
 const form = document.getElementById("formulario");
+const modal = document.querySelector(".modal");
+const btnCerrar = document.querySelector(".cerrar");
+const modalData = document.querySelector("#modal__data")
 
 const fields = {
   nombre: {
@@ -43,6 +46,7 @@ const fields = {
   },
 };
 
+//Funcion para agregar evento de validacion
 const addListeners = (key) => {
   const input = document.getElementById(key);
   const group = document.getElementById(`group-${key}`);
@@ -50,7 +54,10 @@ const addListeners = (key) => {
 
   input.addEventListener("blur", () => {
     const valid = fields[key].validate(input.value);
-    group.classList.remove("formulario__grupo--incorrecto", "formulario__grupo--correcto");
+    group.classList.remove(
+      "formulario__grupo--incorrecto",
+      "formulario__grupo--correcto"
+    );
     if (!valid) {
       errorDiv.textContent = fields[key].error;
       group.classList.add("formulario__grupo--incorrecto");
@@ -66,8 +73,10 @@ const addListeners = (key) => {
   });
 };
 
+//Agrego las validaciones
 Object.keys(fields).forEach(addListeners);
 
+//Evento submit
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let isValid = true;
@@ -90,7 +99,28 @@ form.addEventListener("submit", (e) => {
   }
 
   if (isValid) {
-    alert("Formulario enviado correctamente:\n" + output.join("\n"));
+    const datos = {};
+    for (let key in fields) {
+      const input = document.getElementById(key);
+      datos[key] = input.value.trim();
+    }
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(datos),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        modal.style.display = "flex";
+        modalData.innerText = JSON.stringify(data)
+      })
+      .catch((error) => {
+        console.error("Error al enviar:", error);
+        alert("Hubo un error al enviar el formulario");
+      });
+    localStorage.setItem("formularioDatos", JSON.stringify(datos));
   } else {
     alert("Errores en el formulario. Corrige los campos indicados.");
   }
@@ -105,3 +135,33 @@ nombreInput.addEventListener("input", () => {
   tituloFormulario.textContent = valor !== "" ? `Hola ${valor}` : "Hola";
 });
 
+//Cargar datos del local storage
+const datosGuardados = localStorage.getItem("formularioDatos");
+if (datosGuardados) {
+  const datos = JSON.parse(datosGuardados);
+  for (let key in datos) {
+    const input = document.getElementById(key);
+    if (input) {
+      input.value = datos[key];
+    }
+  }
+
+  // Actualizo el titulo si ya estaba el nombre
+  const nombreInicial = datos["nombre"]?.trim();
+  if (nombreInicial) {
+    tituloFormulario.textContent = `Hola ${nombreInicial}`;
+  }
+}
+
+
+// Cerrar modal al hacer click en (X)
+btnCerrar.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+// Cerrar modal si se hace clic fuera del contenido
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});
