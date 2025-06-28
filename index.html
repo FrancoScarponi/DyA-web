@@ -1,9 +1,12 @@
+<!-- 
+ https://www.infobae.com/tecno/2025/04/09/microsoft-ha-advertido-que-240-millones-de-usuarios-de-windows-quedaran-sin-soporte-este-ano/
+ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Noticias</title>
     <link rel="stylesheet" href="./app.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,91 +25,191 @@
               alt=""
             />
           </a>
-          <span>15 May, 2025</span>
+          <span id="fecha">15 May, 2025</span>
           <span>Argentina</span>
           <span>Colombia</span>
           <span>España</span>
           <span>Mexico</span>
+          <div class="navbar__register">
+            <a href="./form.html" id="navbar__button">Registrarse</a>
+          </div>
         </nav>
-        <form id="formulario" class="formulario">
-					<div class="formulario__titulo">
-						<h1 id="title">Hola</h1>
-					</div>
-          <div class="formulario__columna">
-            <div class="formulario__grupo" id="group-nombre">
-              <label for="nombre">Nombre completo</label>
-              <input type="text" id="nombre" />
-              <div class="formulario__mensaje-error" id="error-nombre"></div>
-            </div>
-            <div class="formulario__grupo" id="group-email">
-              <label for="email">Email</label>
-              <input type="email" id="email" />
-              <div class="formulario__mensaje-error" id="error-email"></div>
-            </div>
+        <div class="menu">
+          <a class="menu__logo">
+            <img
+              src="https://www.infobae.com/pf/resources/images/logo_infobae_naranja.svg?d=3172"
+              alt=""
+            />
+          </a>
+          <div class="menu__items">
+            <span>Ultimas noticias</span>
+            <span>Politica</span>
+            <span>Economia</span>
+            <span>Dolar Hoy</span>
+            <span>Deportes</span>
+            <span>Sociedad</span>
+            <span>Policiales</span>
           </div>
+        </div>
+        <header class="encabezado">
+          <h1 class="titulo">
+            Microsoft ha advertido que 240 millones de usuarios de Windows
+            quedarán sin soporte este año
+          </h1>
+          <h2 class="subtitulo">
+            La compañía ha asegurado que los dispositivos que no reciban
+            actualizaciones de seguridad estarán expuestos a vulnerabilidades
+            críticas
+          </h2>
+        </header>
+        <div class="columnas">
+          <article class="noticia">
+            <div class="noticia__contenido">
+              <figure class="noticia__imagen">
+                <img
+                  src="https://www.infobae.com/resizer/v2/4R3FXLTP6RDSJLRCUZTUBBQEXM.jpg?auth=43c29bbbf137287fd71130c3b4c1425a5ccb59d97ea5e4645616c5971adca528&smart=true&width=992&height=606&quality=85"
+                  alt="Vercel logo"
+                />
+                <figcaption>
+                  Microsoft dejará de ofrecer actualizaciones y parches de
+                  seguridad a Windows 10 en octubre de 2025. EFE/EPA/RITCHIE B.
+                  TONGO
+                </figcaption>
+              </figure>
 
-          <div class="formulario__columna">
-            <div class="formulario__grupo" id="group-password">
-              <label for="password">Contraseña</label>
-              <input type="password" id="password" />
-              <div class="formulario__mensaje-error" id="error-password"></div>
-            </div>
-            <div class="formulario__grupo" id="group-repetir">
-              <label for="repetir">Repetir contraseña</label>
-              <input type="password" id="repetir" />
-              <div class="formulario__mensaje-error" id="error-repetir"></div>
-            </div>
-          </div>
+              <p>
+                <a
+                  href="https://www.infobae.com/tecno/2025/04/08/cuentas-de-google-y-microsoft-en-peligro-hackers-logran-eludir-la-autenticacion-de-dos-factores/"
+                  >Microsoft</a
+                >
+                ha intensificado sus esfuerzos para acelerar la transición a
+                Windows 11, un sistema operativo que podría
+                <strong>
+                  reducir la dependencia de versiones anteriores y forzar a los
+                  usuarios a
+                  <a
+                    href="https://www.infobae.com/tecno/2025/04/09/el-fin-del-hdmi-lanzan-un-cable-que-transmite-video-8k-y-alimenta-la-energia-de-los-dispositivos-al-mismo-tiempo/"
+                    >adaptarse a la nueva tecnología.
+                  </a>
+                </strong>
+                Sin embargo, para aquellos que no pueden o no desean actualizar
+                sus equipos, las alternativas se han vuelto limitadas.
+              </p>
+              <p>
+                El 14 de octubre de 2025, Microsoft dejará de dar soporte a
+                Windows 10...
+              </p>
+              <p>Microsoft ha sido clara en sus advertencias...</p>
 
-          <div class="formulario__columna">
-            <div class="formulario__grupo" id="group-edad">
-              <label for="edad">Edad</label>
-              <input type="number" id="edad" />
-              <div class="formulario__mensaje-error" id="error-edad"></div>
-            </div>
-            <div class="formulario__grupo" id="group-telefono">
-              <label for="telefono">Teléfono</label>
-              <input type="text" id="telefono" />
-              <div class="formulario__mensaje-error" id="error-telefono"></div>
-            </div>
-          </div>
+              <figure class="noticia__imagen">
+                <img
+                  src="https://www.infobae.com/resizer/v2/PZ5GS2NITRXH546CLABNHDR45A.jpg?auth=e2c59cde8c1758cd570a1d03c31f87507baafd34b6efcf42b0f2e1760ab010af&smart=true&width=992&height=661&quality=85"
+                  alt="Mother"
+                />
+                <figcaption>
+                  Muchos dispositivos no podrán actualizarse a Windows 11, lo
+                  que obliga a los usuarios a tomar decisiones sobre la
+                  seguridad y el futuro de sus equipos. REUTERS/Dado
+                  Ruvic/Illustration/File Photo
+                </figcaption>
+              </figure>
 
-          <div class="formulario__columna">
-            <div class="formulario__grupo" id="group-direccion">
-              <label for="direccion">Dirección</label>
-              <input type="text" id="direccion" />
-              <div class="formulario__mensaje-error" id="error-direccion"></div>
-            </div>
-            <div class="formulario__grupo" id="group-ciudad">
-              <label for="ciudad">Ciudad</label>
-              <input type="text" id="ciudad" />
-              <div class="formulario__mensaje-error" id="error-ciudad"></div>
-            </div>
-          </div>
+              <p>
+                El dilema que enfrentan los usuarios cuyos equipos no cumplen
+                con los requisitos para la actualización es significativo.
+                <strong>
+                  Algunos pueden optar por actualizar a Windows 11, pero esto
+                  solo es posible si el dispositivo tiene hardware compatible,
+                </strong>
+                como un procesador moderno y características como el TPM 2.0.
+              </p>
+              <p>
+                Para aquellos que no puedan cumplir con estas especificaciones,
+                las opciones son limitadas.
+                <strong>
+                  Algunos expertos han sugerido instalar sistemas operativos
+                  alternativos,
+                </strong>
+                como Linux, que podrían ofrecer una segunda vida a los equipos,
+                aunque esta opción no siempre es viable para todos los usuarios.
+              </p>
 
-          <div class="formulario__columna">
-            <div class="formulario__grupo" id="group-codigoPostal">
-              <label for="codigoPostal">Código Postal</label>
-              <input type="text" id="codigoPostal" />
-              <div
-                class="formulario__mensaje-error"
-                id="error-codigoPostal"
-              ></div>
-            </div>
-            <div class="formulario__grupo" id="group-dni">
-              <label for="dni">DNI</label>
-              <input type="text" id="dni" />
-              <div class="formulario__mensaje-error" id="error-dni"></div>
-            </div>
-          </div>
+              <figure class="noticia__imagen">
+                <img
+                  src="https://www.infobae.com/resizer/v2/PU5OZNLL6JECVAK354FGXYX2D4.jpg?auth=a115eb9787077bf111d7f5ae01d3481c367bfc9b5543fadde8d88ef33541b99f&smart=true&width=992&height=606&quality=85"
+                  alt="Mother"
+                />
+                <figcaption>
+                  Muchos dispositivos no podrán actualizarse a Windows 11, lo
+                  que obliga a los usuarios a tomar decisiones sobre la
+                  seguridad y el futuro de sus equipos. EFE/EPA/HANNIBAL
+                  HANSCHKE
+                </figcaption>
+              </figure>
 
-          <div class="button-wrapper">
-            <button type="submit">Enviar</button>
-          </div>
-        </form>
+              <p>
+                Sin embargo, la transición no ha estado exenta de controversia.
+                Microsoft ha implementado medidas que han generado debate, como
+                la restricción de ciertas funciones, como el asistente de IA
+                Copilot, solo a Windows 11.
+              </p>
+              <p>
+                Al mismo tiempo, la compañía ha lanzado campañas que alertan a
+                los usuarios de que sus PCs no son seguras sin la actualización.
+                <strong>
+                  Estas acciones han llevado a un aumento del 23% en las
+                  instalaciones de Windows 11 tras una de estas campañas.
+                </strong>
+              </p>
+              <p>
+                Además, la incompatibilidad con Windows 11 ha afectado a muchos
+                equipos que no cumplen con los requisitos de hardware, como el
+                mencionado TPM 2.0.
+                <strong>
+                  Un informe de Lansweeper señaló que el 43% de los equipos
+                  empresariales no cumplen con estos requisitos.
+                </strong>
+              </p>
+            </div>
+          </article>
+
+          <aside class="noticias-relacionadas">
+            <div class="noticias-relacionadas__titulo">
+              <h2>Últimas noticias</h2>
+            </div>
+            <div class="noticias-relacionadas__lista">
+              <div class="noticia-relacionada">
+                <a href="#">
+                  <h3>
+                    El dueño del Inter Miami dio detalles de los planes de
+                    Messi...
+                  </h3>
+                </a>
+              </div>
+              <div class="noticia-relacionada">
+                <a href="#">
+                  <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                  </h3>
+                </a>
+              </div>
+              <div class="noticia-relacionada">
+                <a href="#">
+                  <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                  </h3>
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
       </section>
     </main>
-		<footer class="footer">
+    <div style="margin-top: 40px">
+      <a href="./form.html" id="button">Registrarse</a>
+    </div>
+
+    <footer class="footer">
       <div class="footer__seccion">
         <h3>Infobae</h3>
         <span>Seguinos en</span>
@@ -133,12 +236,14 @@
         </div>
       </div>
     </footer>
-    <div class="modal">
-      <div class="modal__container">
-        <p id="modal__data"></p>
-        <span class="cerrar">&times;</span>
-      </div>
-    </div>
-    <script src="./form.js"></script>
+    <script>
+      //fecha
+      const fecha = new Date();
+      const opciones = { day: "2-digit", month: "short", year: "numeric" };
+      const fechaFormateada = fecha.toLocaleDateString("en-GB", opciones);
+
+      const fechaElement = document.querySelector("#fecha");
+      fechaElement.innerText = fechaFormateada;
+    </script>
   </body>
 </html>

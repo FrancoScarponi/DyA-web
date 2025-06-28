@@ -165,3 +165,11 @@ window.addEventListener("click", (e) => {
     modal.style.display = "none";
   }
 });
+
+//fecha
+const fecha = new Date();
+const opciones = { day: '2-digit', month: 'short', year: 'numeric' };
+const fechaFormateada = fecha.toLocaleDateString('en-GB', opciones); 
+
+const fechaElement = document.querySelector('#fecha');
+fechaElement.innerText = fechaFormateada;
